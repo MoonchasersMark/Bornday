@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY NA BIRTHDAY MO PA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Is it your birthday today?</h1>
+    <button onclick="checkBirthday(true)">YES</button>
+    <button onclick="checkBirthday(false)">NO</button>
+</div>
+
+<script>
+    function checkBirthday(isBirthday) {
+        if (isBirthday) {
+            alert("HAPPY BIRTHDAY TO YOUUUUUU!");
+            openYouTubeVideo("https://youtu.be/tL6SQ2PGXV4?si=9YiLgYqUUlaaOxy-");
+        } else {
+            alert("sabe ko nga hindi pa haysss sabe kasi ni mark zuckerborgee HAHAHHAHAHAHA okay byee eyyy ka nalang eyyyy~~~~");
+            showPhoto("https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/452261039_1006682057609433_365638013582520494_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_ohc=0STKljcQAbAQ7kNvgFNyU7m&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1QEVFvPns73Bi7xth3F4mPbOmy00xSqQxDVFzOn07cfgxw&oe=66C55B62");
+        }
+    }
+
+    function openYouTubeVideo(url) {
+        window.open(url, "_blank");
+    }
+
+    function showPhoto(photoUrl) {
+        var img = document.createElement("img");
+        img.src = photoUrl;
+        img.alt = "Your Birthday Photo";
+        document.body.appendChild(img);
+    }
+</script>
+</body>
+</html>

@@ -41,11 +41,13 @@
         window.open(url, "_blank");
     }
 
-    function showPhoto(photoUrl) {
-        var img = document.createElement("img");
-        img.src = photoUrl;
-        img.alt = "Your Birthday Photo";
-        document.body.appendChild(img);
+   function showPhoto(photoUrl) {
+    var img = document.createElement("img");
+    img.src = photoUrl;
+    img.alt = "Your Birthday Photo";
+    img.style.maxWidth = "100%"; // Ensure it scales properly
+    document.body.appendChild(img);
+}
     }
 </script>
 </body>

@@ -3,51 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bornday</title>
+    <title>My Dearest Love</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Cormorant Garamond', serif;
+            color: #4a235a;
         }
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Great+Vibes&display=swap');
+
         .container {
-            max-width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
         }
-        img {
-            max-width: 100%;
+
+        .letter-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+            max-width: 600px;
+            text-align: center;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #d81b60;
+            font-family: 'Great Vibes', cursive;
+        }
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #6a1b9a;
+            font-family: 'Great Vibes', cursive;
+        }
+        .signature {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            font-style: italic;
+            color: #8e24aa;
+            font-family: 'Great Vibes', cursive;
+        }
+        .heart {
+            color: #e91e63;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .decorative-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+        }
+
+        .decorative-container img {
+            width: 80%;
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .decorative-container p {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            text-align: center;
+            color: #6a1b9a;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Is it your birthday today?</h1>
-    <button onclick="checkBirthday(true)">YES</button>
-    <button onclick="checkBirthday(false)">NO</button>
+    <div class="letter-container">
+        <h1>My Dearest Love</h1>
+        <p>
+            I hope this letter finds you well. I’ve been thinking about you a lot lately, and I can’t ignore the silence that has come between us. I want to start by saying how deeply sorry I am for the distance that’s grown, and I take responsibility for my part in it.
+        </p>
+        <p>
+            The past month without you has made me realize just how much you mean to me. I miss your smile, your laugh, and the way you make everything feel right even when things are hard. You are my safe space, my greatest joy, and my best friend and I don’t want to lose that.
+        </p>
+        <p>
+            I know I may not always say or do the right things, but I want to work on us. I want to listen more, understand better, and love you in all the ways you deserve. Please know that I’m ready to compromise, to grow, and to fight for us if you’re willing to give me another chance.
+        </p>
+        <p>
+            I’m giving you this gift not because I think it can make up for lost time, but because I want it to remind you of how much I cherish you. I hope it makes you smile, even just a little.
+        </p>
+        <p>
+            I love you, Gillian. I always have, and I always will. I’m here, waiting for you, ready to make things right.
+        </p>
+        <div class="heart">❤</div>
+        <p class="signature">Always yours,<br>Yang</p>
+    </div>
 </div>
-
-<script>
-    function checkBirthday(isBirthday) {
-        if (isBirthday) {
-            alert("HAPPY BIRTHDAY TO YOUUUUUU!");
-            openYouTubeVideo("https://youtu.be/tL6SQ2PGXV4?si=9YiLgYqUUlaaOxy-");
-        } else {
-            alert("sabe ko nga hindi pa haysss sabe kasi ni mark zuckerborgee HAHAHHAHAHAHA okay byee eyyy ka nalang eyyyy~~~~");
-            showPhoto("https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/453361353_1014481360333028_9215832726844152012_n.png?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_ohc=vRc3C9cJ5lQQ7kNvgHW0cX9&_nc_ht=scontent.fmnl17-1.fna&oh=03_Q7cD1QED7LDmwJrS5F6h_bLOd_8NF6zY1HhkhcqbdDssC9CqrA&oe=66DEF106");
-        }
-    }
-
-    function openYouTubeVideo(url) {
-        window.open(url, "_blank");
-    }
-
-    function showPhoto(photoUrl) {
-        var img = document.createElement("img");
-        img.src = photoUrl;
-        img.alt = "Your Birthday Photo";
-        img.style.maxWidth = "100%"; // Ensure it scales properly
-        document.body.appendChild(img);
-    }
-</script>
 </body>
 </html>
